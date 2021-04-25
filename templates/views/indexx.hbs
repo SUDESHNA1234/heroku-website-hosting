@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE COVID-19 Help Cell</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+
+<body>
+    {{navbar}}
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/image.jpg" alt="">
+        </div>
+        <ul>
+            <li class="item ">
+                <a href="# ">Home</a>
+            </li>
+            <li class="item ">
+                <a href="/service ">Services</a>
+            </li>
+            <li class="item ">
+                <a href="/donate">Donate </a>
+            </li>
+            <li class="item ">
+                <a href="/about ">About us </a>
+            </li>
+            <li class="item ">
+                <a href="/contact ">Contact us</a>
+            </li>
+             <li class="item ">
+                <a href="/volunteer ">Volunteering</a>
+            </li>
+
+        </ul>
+    </nav>
+    <hr>
+    <section id="home">
+        <h1 class="h-primary"></h1>
+        <p> <b></b> </p>
+        <p></p>
+    </section>
+    <hr>
+    {{service}}
+    <section class ="services">
+           <h1 class="ser">Our services</h1>
+           <div id="services">
+               <ul>
+            <li class="first ">
+                <a href="/service ">Plasma and beds availability</a>
+               
+            </li>
+            <li class="first ">
+                <a href="/service ">Tiffin/food</a>
+            </li>
+            <li class="first ">
+                <a href="/service">24/7 Helpline</a>
+            </li>
+            <li class="first ">
+                <a href="/service">Injections information </a>
+            </li>
+           
+
+        </ul>
+           </div>
+    </section>
+    <section class="advices">
+        <h1 class="h-primary centre">PRECAUTIONS</h1>
+        <div id="advices">
+            <div class="box"><img src="/img/collection1.webp" alt="">
+                <h2 class="h-secondary centre">Get Vaccinated</h2>
+                <p></p>
+            </div>
+            <div class="box"><img src="/img/collection2.jpg" alt="">
+                <h2 class="h-secondary centre">Wash your hands properly</h2>
+                <p></p>
+            </div>
+            <div class="box"><img src="/img/collection3.webp" alt="">
+                <h2 class="h-secondary centre">Use mask and sanitizer</h2>
+                <p></p>
+            </div>
+            <div class="box"><img src="/img/collection4.png" alt="">
+                <h2 class="h-secondary centre">Be Positive </h2>
+                <p></p>
+            </div>
+            <div class="box"><img src="/img/collection5.jpg" alt="">
+                <h2 class="h-secondary centre">Always maintain social distancing</h2>
+                <p></p>
+            </div>
+        </div>
+       
+    </section>
+    <hr>
+    {{>contact}}
+    <section class="free">
+        <div id="second">
+            <p class="pp">Our Contact Information</p>
+            <p class="pp">8668806799</p>
+        </div>
+        <div id="insta">
+            <h class="in">Keep in touch</h>
+            <a href="https://instagram.com/we_cummins?igshid=1jyfpyuyal7ih" target="_blank"></a>
+              <i class="fab fa-instagram"></i>
+        </div>
+    </section>
+    {{>donate}}
+
+    {{>about}}
+
+    {{>volunteer}}
+</body>
+
+</html>

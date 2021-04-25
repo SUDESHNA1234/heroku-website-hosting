@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vegetables and Fruit delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  media="screen and (max-width:1140px)"href="phone.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+ /*css variables*/
+ :root{
+     --navbar-height:60px;
+ }
+#logo{
+    margin: 10px 20px;
+}
+    #logo img{
+   
+    height: 40px;
+    margin: 3px 6px;
+}
+#navbar{
+     display: flex;
+     align-items: center;
+     position: absolute;
+     top: 0px;
+ }
+ #navbar ul
+  {
+      display: flex;
+ }
+ #navbar ul li{
+     
+     list-style: none;
+     font-size: 1.4rem;
+ }
+ #navbar ul li a{
+     color: whitesmoke;
+     display: block;
+     padding: 1px 15px;
+     border-radius: 20px;
+     text-decoration: none;
+ }
+ #navbar ul li a:hover{
+     color: black;
+     background-color: blanchedalmond;
+ }
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+  height:400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('/img/food.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: black;
+   color: cornsilk;
+   margin: 19px;
+   font-size: 1.5rem;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.h-primary{
+   font-size: 2.8rem; 
+   padding: 12px;
+
+}
+.h-secondary{
+   font-size: 2.8rem; 
+   padding: 12px;
+
+}
+#services{
+    display: flex;
+    margin: 34px;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 40px;
+    margin: 3px 30px;
+    border-radius: 23px;
+    background-color: gray;
+}
+#services .box img{
+        height: 160px;
+        display: block;
+    margin: auto;
+
+}
+.center{
+    text-align: center;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height: 344px;
+   
+}
+#clients img{
+    height: 44x;
+    width: 70px;
+}
+.client-item{
+    padding: 15px ;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/img/logo2.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('/img/contact.webp')no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: cornsilk;
+    padding: 9px 20px;
+
+}
+#contact-box form{
+   width: 40%;
+  
+}
+#contact-box label{
+  font-size: 1.3rem;
+}
+  
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+</style>
+<body>
+    {{navbar}}
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/logo1.webp" alt="myonlinemeal.com">
+            </div>
+            <ul>
+               <li class="item"><a href="#">Home</a></li>
+               <li class="item"><a href="#">About us</a></li>
+               <li class="item"><a href="#">Services</a></li>
+               <li class="item"><a href="/contact">Contact us</a></li>
+              
+                
+            </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to OnlineVege</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, obcaecati.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, eligendi nostrum!</p>
+      <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="/img/pic.webp" alt="">
+                <h2 class="h-secondary center">Vegetable Ordering</h2>
+                <p clss="certer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni qui aut.</p>
+
+            </div>
+            <div class="box">
+                <img src="/img/fruit.webp" alt="">
+                <h2 class="h-secondary center">Fruit Ordering</h2>
+                <p clss="certer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni qui aut.</p>
+
+            </div>
+           
+        </div>
+    </section>
+    <section id="client-section">
+  <h1 class="h-primary center">Our clients</h1>
+  <div id="clients">
+      <div class="client-item">
+          <img src="/img/iPhone_logo.png" alt="our clients">
+      </div>
+      <div class="client-item">
+        <img src="/img/and.png" alt="our clients">
+    </div>
+    <div class="client-item">
+        <img src="/img/mic.png" alt="our clients">
+    </div>
+  </div>
+
+
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="name" id="email" placeholder="Enter Your mail">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="name" id="phone" placeholder="Enter Your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Message:</label>
+                    <textarea name="message" id="msg"  cols="20" rows="10" ></textarea>
+                </div> 
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.myOnlineVege.com. All Rights Reserved!
+        </div>
+    </footer>
+</body>
+</html>
